@@ -1,5 +1,5 @@
-
 <?php
+declare(strict_types=1);
 session_start();
 
 $_SESSION['count'] = isset($_SESSION['count'])?
@@ -12,6 +12,7 @@ if ($number_of_sessions%3 === 0){
 
 $_SESSION['number_of_sessions_id'] = $_SESSION['count'];
 
+echo "<h1>Третья страница</h1>" . "<br>";
 echo "Вы загрузили страницу " .  $_SESSION['number_of_sessions_id']  . " раз" . "<br>";
 
 
